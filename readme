@@ -1,0 +1,25 @@
+Use Mipy library to copy local files to board
+
+Usage: mipy [OPTIONS] COMMAND [ARGS]...
+
+  Manage files with Micropython
+
+Options:
+  -b, --baud <rate>      Port speed in baud (default is 115200).
+  -i, --interrupt        Send soft interrupt (ctrl-c) before command.
+  -p, --port <port>      Serial port device (default is /dev/ttyUSB0).
+  -r, --reset            Send soft reset (ctrl-d) after copy.
+  -t, --timeout INTEGER  Timeout.
+  --help                 Show this message and exit.
+
+Commands:
+  cp  Copy files to Micropython
+  
+  
+Follow the steps to copy file from linux machine to Maix boards:
+
+1. pip install mipy
+2. mipy -b 115200 -p /dev/ttyUSB0 cp filename.py
+
+
+
