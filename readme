@@ -22,4 +22,8 @@ Follow the steps to copy file from linux machine to Maix boards:
 2. mipy -b 115200 -p /dev/ttyUSB0 cp filename.py
 
 
+Alternatively use the uPyLoader-linux uploader (https://github.com/BetaRavener/uPyLoader/releases/tag/v0.1.4)
+with the following command make the file executable:
+sudo chmod +x ./FILENAME
 
+double click to run the GUI
